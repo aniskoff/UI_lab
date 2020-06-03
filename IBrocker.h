@@ -22,7 +22,7 @@ public:
 
     virtual Type getType() const = 0;
     virtual void* getInterfaceImpl(Type type) const = 0;
-    virtual RESULT_CODE release() = 0; // harakiri
+    virtual void release() = 0; // harakiri
 
 protected:
     /*dtor*/
