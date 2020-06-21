@@ -1,7 +1,7 @@
 #ifndef ICOMPACT_H
 #define ICOMPACT_H
 
-class IVector;
+#include "IVector.h"
 #include "ILogger.h"
 #include<stddef.h>
 class ICompact
@@ -10,6 +10,7 @@ public:
     class iterator;
 
     /*factories*/
+
 
     static ICompact* createCompact(IVector const* const begin, IVector const* const end, ILogger*logger);
 

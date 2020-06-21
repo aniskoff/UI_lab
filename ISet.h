@@ -5,7 +5,7 @@
 class ISet {
 public:
 	static ISet* createSet(ILogger* pLogger);
-	virtual~ISet() = 0;
+	virtual~ISet() {};
 	virtual RESULT_CODE insert(const IVector* pVector,IVector::NORM norm, double tolerance) = 0;
 	virtual RESULT_CODE get(IVector*& pVector, size_t index)const = 0;
 	virtual RESULT_CODE get(IVector*& pVector, IVector const* pSample, IVector::NORM norm, double tolerance)const = 0;
@@ -17,7 +17,7 @@ public:
 	virtual ISet* clone()const = 0;
 	static ISet* add(ISet const* pOperand1, ISet const* pOperand2, IVector::NORM norm, double tolerance, ILogger* pLogger);
 	static ISet* intersect(ISet const* pOperand1, ISet const* pOperand2, IVector::NORM norm, double tolerance, ILogger* pLogger);
-        static ISet* sub(ISet const* pOperand1, ISet const* pOperand2, IVector::NORM norm, double tolerance, ILogger* pLogger);
+    static ISet* sub(ISet const* pOperand1, ISet const* pOperand2, IVector::NORM norm, double tolerance, ILogger* pLogger);
 	static ISet* symSub(ISet const* pOperand1, ISet const* pOperand2, IVector::NORM norm, double tolerance, ILogger* pLogger);
 protected:
 	ISet() = default;

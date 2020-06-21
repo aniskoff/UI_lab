@@ -1,12 +1,7 @@
-#ifndef IVECTOR_H
-#define IVECTOR_H
-
+#pragma once
 
 #include<stddef.h>
 #include "ILogger.h"
-
-
-
 
 
 
@@ -18,7 +13,7 @@ public:
         NORM_INF
     };
     static IVector* createVector(size_t dim, double* pData, ILogger* pLogger);
-    virtual ~IVector() = 0;
+    virtual ~IVector() {};
     virtual IVector* clone() const = 0;
     static IVector* add(IVector const* pOperand1, IVector const* pOperand2, ILogger* pLogger);
     static IVector* sub(IVector const* pOperand1, IVector const* pOperand2, ILogger* pLogger);
@@ -36,5 +31,3 @@ private:
     IVector& operator=(IVector const& vector) = delete;
 };
 
-
-#endif // IVECTOR_H
