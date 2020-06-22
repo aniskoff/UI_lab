@@ -1,8 +1,8 @@
 #ifndef ICOMPACT_H
 #define ICOMPACT_H
 
-#include "IVector.h"
-#include "ILogger.h"
+#include "IVector/IVector.h"
+#include "ILogger/ILogger.h"
 #include<stddef.h>
 class ICompact
 {

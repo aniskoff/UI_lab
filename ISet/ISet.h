@@ -1,7 +1,7 @@
 #ifndef ISET_H
 #define ISET_H
-#include "ILogger.h"
-#include "IVector.h"
+#include "ILogger/ILogger.h"
+#include "IVector/IVector.h"
 class ISet {
 public:
 	static ISet* createSet(ILogger* pLogger);

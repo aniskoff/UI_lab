@@ -1,7 +1,7 @@
 #ifndef ISOLVER_H
 #define ISOLVER_H
 
-#include "IVector.h"
+#include "IVector/IVector.h"
 #include "IProblem.h"
 #include <QString>
 

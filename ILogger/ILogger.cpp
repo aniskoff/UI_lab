@@ -5,7 +5,7 @@ ILogger* ILogger::createLogger(void* pClient)
 {
 	if (pClient != nullptr)
 	{
-		// some implementation
+        return nullptr; // some implementation
 	}
 	else
 	{

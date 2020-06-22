@@ -1,8 +1,8 @@
 #ifndef IPROBLEM_H
 #define IPROBLEM_H
 
-#include "IVector.h"
-#include "ICompact.h"
+#include "IVector/IVector.h"
+#include "ICompact/ICompact.h"
 
 class IProblem
 {
